@@ -1,0 +1,18 @@
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg"  id="close">
+    <path fill="#fff" d="M0 0h18v18H0z"></path>
+    <path d="M15 4.108L13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108z" fill="#000"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg"  id="Ellipse">
+    <circle cx="15" cy="15" r="15" ></circle>
+    <circle cx="15" cy="15" r="14.5" stroke="#000" stroke-opacity=".1"></circle>
+  </symbol>
+</svg>
+
+
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" id="Vector">
+    <title>Vector</title>
+    <path d="M32 3.223L28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"></path>
+  </symbol>
+</svg>
