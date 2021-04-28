@@ -18,7 +18,6 @@
 }
 
 .our-works {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -58,4 +57,9 @@
   text-transform: uppercase;
 
   color: #ffffff;
+}
+.our-works_hiden {
+  @media screen and(max-width:1199px) {
+    display: none;
+  }
 }
