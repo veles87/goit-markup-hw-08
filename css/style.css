@@ -115,6 +115,7 @@ h3 {
 }
 
 .container {
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -694,6 +695,24 @@ header {
   border: 1px solid var(--hover-color);
 }
 
+@media screen and (min-width: 480px) {
+  .icon__client {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .icon__client {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon__client {
+    max-width: 1200px;
+  }
+}
+
 .client__position a {
   display: inline-flex;
   justify-content: center;
@@ -708,6 +727,8 @@ header {
 }
 
 .clients__section {
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
@@ -733,9 +754,9 @@ header {
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
   justify-items: center;
   align-items: center;
+  justify-content: space-around;
   margin-top: 0;
   margin-bottom: 94px;
 }
