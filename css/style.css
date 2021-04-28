@@ -75,6 +75,7 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 p {
@@ -726,18 +727,14 @@ header {
 }
 
 .client-icon__position {
-  padding-left: 0;
-  display: flex;
-  align-items: center;
   margin-bottom: 94px;
 }
 
-/*.client-icon-position__item {
+.client-icon-position__item {
   width: 170px;
   height: 90px;
-  margin-right: 30px;
 }
-*/
+
 .client:hover .icon__client,
 .client:focus .icon__client {
   stroke: var(--hover-color);
@@ -750,18 +747,24 @@ header {
 .grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-left: -30px;
   margin-top: -30px;
 }
 
 .grid__item {
-  flex-basis: calc((100% - 30px * var(--grid__item)) / var(--grid__item));
   margin-left: 30px;
   margin-top: 30px;
 }
 
 .client-icon-position__item {
-  --grid__item: 2;
+  --grid__item: 1;
+}
+
+@media screen and (min-width: 280px) {
+  .client-icon-position__item {
+    --grid__item: 2;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -770,7 +773,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.9px) {
   .client-icon-position__item {
     --grid__item: 6;
   }
