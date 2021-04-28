@@ -21,18 +21,6 @@
     fill: var(--hover-color);
     border: 1px solid var(--hover-color);
   }
-
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
 }
 .client__position a {
   display: inline-flex;
@@ -52,43 +40,48 @@
     box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__section {
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 .client-icon__position {
   padding-left: 0;
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 94px;
 }
-.client-icon-position__item {
+/*.client-icon-position__item {
   width: 170px;
   height: 90px;
-  display: inline-grid;
   margin-right: 30px;
 }
-
+*/
 .client:hover .icon__client,
 .client:focus .icon__client {
   stroke: var(--hover-color);
 }
 
-.grid {
-  display: flex;
-
-  justify-items: center;
-  align-items: center;
-  justify-content: space-around;
-
-  margin-top: 0;
-  margin-bottom: 94px;
+.client-icon-position__item:last-child {
+  margin-right: 0;
 }
 
-.grid-item.client-icon-position__item.client-icon__position.grid {
-  flex-basis: calc((100% - 30px * 6) / 6);
-  margin-top: 30px;
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.grid__item {
+  flex-basis: calc((100% - 30px * var(--grid__item)) / var(--grid__item));
   margin-left: 30px;
+  margin-top: 30px;
+}
+
+.client-icon-position__item {
+  --grid__item: 2;
+
+  @media screen and (min-width: 768px) {
+    --grid__item: 3;
+  }
+  @media screen and (min-width: 1200px) {
+    --grid__item: 6;
+  }
 }
