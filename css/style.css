@@ -544,7 +544,7 @@ header {
 .our-team__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 @media screen and (min-width: 480px) {
@@ -633,7 +633,7 @@ header {
 }
 
 .teems {
-  margin-left: 30px;
+  justify-content: space-around;
   margin-bottom: 30px;
 }
 
