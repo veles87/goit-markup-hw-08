@@ -42,7 +42,7 @@
                 <li class="contacts__item  link ">
     
     
-                    <a href="mailto:info@devstudio.com" class="saite-contacts">
+                    <a href="mailto:info@devstudio.com" class="saite-contacts saite-contacts">
                         <svg class="header-icon__mail ">
                             <use href=".//images/svg/clients.svg#envelope"></use>
     
@@ -57,18 +57,39 @@
                     <a href="tel:+380961111111" class="saite-contacts ">
                         <svg class="header-icon__phone">
                             <use href=".//images/svg/clients.svg#smartphone"></use>
+                            
     
                         </svg>
                         +38 096 111 11 11 </a>
                 </li>
     
             </ul>
-    
+           <button type="button" class="buttons" aria-expanded="false" aria-controls="header__menu-container" data-menu-button>
+                    <svg class="" width="40" height="40" aria-label="swich mobile menu">
+                        <use class="icon__menu-mobile" href=".//images/symbol-defs.svg#menu_mobile"></use>
+                    <use class="icon__mobile-close" href=".//images/symbol-defs.svg#mobile-close"></use>
+                    
+                    </svg>
+                  </button>
+                <div class="header__menu-container" id="header__menu-container" data-menu>
+                    <ul class="header-menu__nav list">
+                        <li class="header-menu-nav__item link">
+                            <a href="./index.html" class="saite-nav link link-current ">Студия</a>
+                        </li>
+                        <li class="header-menu-nav__item link">
+                            <a href="./portfolio.html" class="saite-nav link ">Портфолио</a>
+                        </li>
+                        <li class="header-menu-nav__item link">
+                            <a href="" class="saite-nav link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+              
         </nav>
     
     </header>
     <!--Уникальный контент-->
-    <main>
+   <main>
 
        <section class="hero">
           
@@ -79,7 +100,7 @@
         </section> 
 
         <!-- Наше преимущество-->
-        <section class="section ">
+       <section class="section ">
            <div class="container">
                 <h2></h2>
                 <ul class="section-about-us grids ">
@@ -595,6 +616,7 @@
     </div>
 -->
     <script src="./js/modal.js"></script>
+    <script src="./js/header-menu.js"></script>
 
     <script>
         (() => {

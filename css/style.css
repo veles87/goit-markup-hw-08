@@ -162,6 +162,7 @@ h3 {
 }
 
 header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -260,6 +261,24 @@ header {
   margin-left: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .header__contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    display: flex;
+  }
+}
+
 .contacts__item:last-child {
   margin-left: 30px;
 }
@@ -315,6 +334,11 @@ header {
 .saite-contacts:hover .header-icon__mail,
 .saite-contacts:focus .header-icon__mail {
   stroke: var(--hover-color);
+}
+
+.header__menu-icon {
+  content: "";
+  color: black;
 }
 
 /*
@@ -401,7 +425,7 @@ header {
 
 @media screen and (min-width: 375px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image350@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image/bg-image-mobile.jpg);
   }
 }
 
@@ -497,7 +521,6 @@ header {
 }
 
 .section-about-us {
-  display: flex;
   justify-content: center;
   padding-left: 0px;
   font-family: Roboto;
@@ -1991,5 +2014,65 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+.buttons {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: var(--hover-color);
+}
+
+.buttons:active {
+  background-color: #b93fd28f;
+  color: var(--our-backgraund-color);
+}
+
+.icon__mobile-close {
+  display: none;
+}
+
+.is-open .icon__mobile-close {
+  display: block;
+}
+
+.is-open .icon__menu-mobile {
+  display: none;
+}
+
+.header__menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  /* width: 480px;
+height: 796px;*/
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.header__menu-container.is-open {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
