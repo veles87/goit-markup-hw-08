@@ -690,6 +690,7 @@ header {
 }
 
 .our-team__bc {
+  width: 100%;
   background-color: var(--our-backgraund-color);
 }
 
@@ -1497,6 +1498,10 @@ footer {
   background-color: var(--footer-social-color-bg);
 }
 
+.fi-social-link:hover, .fi-social-link:focus {
+  background-color: var(--hover-color);
+}
+
 @media screen and (min-width: 375px) {
   .footer-container {
     text-align: center;
@@ -1575,11 +1580,6 @@ footer {
 
 .footer__container {
   display: flex;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .filters {
@@ -1619,17 +1619,10 @@ footer {
   border-radius: 4px;
 }
 
-.portfolio__conteiner {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .portfolio__card {
   padding: 0;
   margin: 0;
+  margin-bottom: 94px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;

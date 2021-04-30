@@ -506,6 +506,10 @@ footer {
 }
 .fi-social-link {
   background-color: var(--footer-social-color-bg);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
 }
 .footer-container {
   @media screen and (min-width: 375px) {
