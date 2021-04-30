@@ -241,6 +241,12 @@ header {
   margin-left: 93px;
 }
 
+@media screen and (min-width: 375px) {
+  .header-menu__nav {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .header-menu__nav {
     display: none;
@@ -285,6 +291,12 @@ header {
   align-items: center;
   margin-left: auto;
   padding: 0px;
+}
+
+@media screen and (min-width: 375px) {
+  .header__contacts {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1483,6 +1495,12 @@ footer {
 
 .fi-social-link {
   background-color: var(--footer-social-color-bg);
+}
+
+@media screen and (min-width: 375px) {
+  .footer-container {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 480px) {

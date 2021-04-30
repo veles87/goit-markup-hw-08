@@ -508,6 +508,9 @@ footer {
   background-color: var(--footer-social-color-bg);
 }
 .footer-container {
+  @media screen and (min-width: 375px) {
+    text-align: center;
+  }
   @media screen and (min-width: 480px) {
     text-align: center;
   }

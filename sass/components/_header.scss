@@ -79,6 +79,9 @@ header {
   margin-left: 93px;
 }
 .header-menu__nav {
+  @media screen and (min-width: 375px) {
+    display: none;
+  }
   @media screen and (min-width: 480px) {
     display: none;
   }
@@ -121,6 +124,9 @@ header {
   padding: 0px;
 }
 .header__contacts {
+  @media screen and (min-width: 375px) {
+    display: none;
+  }
   @media screen and (min-width: 480px) {
     display: none;
   }
