@@ -173,9 +173,14 @@ header {
   margin-right: auto;
   margin-left: auto;
   padding: 0px;
+  height: 80px;
 }
 
 .logo {
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -236,6 +241,26 @@ header {
   margin-left: 93px;
 }
 
+@media screen and (min-width: 480px) {
+  .header-menu__nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu__nav {
+    display: flex;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-menu__nav {
+    display: flex;
+    margin-left: 93px;
+  }
+}
+
 .saite-nav {
   display: block;
   padding-top: 32px;
@@ -257,7 +282,9 @@ header {
 
 .header__contacts {
   display: flex;
+  align-items: center;
   margin-left: auto;
+  padding: 0px;
 }
 
 @media screen and (min-width: 480px) {
