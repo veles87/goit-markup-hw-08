@@ -2236,12 +2236,16 @@ footer {
   .mobile-menu-btn {
     display: block;
     left: 160px;
+    margin-left: 60px;
+    margin-right: 15px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .mobile-menu-btn {
     display: block;
+    margin-left: 60px;
+    margin-right: 15px;
   }
 }
 
@@ -2282,7 +2286,6 @@ footer {
   flex-direction: column;
   z-index: 100;
   width: 100%;
-  max-width: 340px;
   height: 100vh;
   padding: 118px 40px 60px;
   background: #ffffff;
