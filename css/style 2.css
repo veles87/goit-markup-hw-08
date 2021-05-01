@@ -2232,6 +2232,19 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-menu-btn {
+    display: block;
+    left: 160px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu-btn {
     display: none;

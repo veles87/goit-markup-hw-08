@@ -58,6 +58,7 @@
 .mobile-menu-btn {
   display: inline-block;
   position: relative;
+
   padding: 0;
   width: 40px;
   height: 40px;
@@ -66,6 +67,13 @@
   z-index: 105;
 
   cursor: pointer;
+  @media screen and (max-width: 479px) {
+    display: block;
+    left: 160px;
+  }
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
