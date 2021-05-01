@@ -309,6 +309,7 @@ header {
   .header__contacts {
     display: block;
     margin-top: 21px;
+    margin-right: auto;
   }
 }
 
