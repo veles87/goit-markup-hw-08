@@ -143,7 +143,11 @@ header {
 .contacts__item:last-child {
   margin-left: 30px;
 }
-
+.contacts__item {
+  @media screen and (min-width: 768px) {
+    margin-left: 10px;
+  }
+}
 .header-icon__mail {
   width: 16px;
   height: 12px;
@@ -200,4 +204,55 @@ header {
 .header__menu-icon {
   content: "";
   color: black;
+}
+
+.header__conteiner {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px;
+  height: 80px;
+}
+@media screen and (min-width: 375px) {
+  .header__conteiner {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    padding: 0px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 374px) {
+  .header__conteiner {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 0;
+    padding: 0px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header__conteiner {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 0;
+    padding: 0px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__conteiner {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 0;
+    padding: 0px;
+    height: 80px;
+  }
 }

@@ -1,0 +1,86 @@
+.portfolio__card {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 94px;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.portfolio__card > .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.portfolio-card__link {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--card-shadow-hover);
+    border-radius: 4px;
+    color: var(--hover-color);
+  }
+}
+
+.card-content {
+  padding: 20px 24px;
+
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.card-text {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+}
+.card-main {
+  margin: 0px;
+}
+.project-titles {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+  padding-left: 24px;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  color: var(--title-color);
+}
+.project-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+.items {
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 1130px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}

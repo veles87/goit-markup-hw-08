@@ -110,9 +110,9 @@
 
   &:hover,
   &:focus {
+    fill: var(--white-color-text);
     background-color: var(--hover-color);
 
-    fill: var(--white-color-text);
     outline: none;
   }
 

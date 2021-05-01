@@ -67,29 +67,25 @@
  
               
         </nav>
-            <button type="button" class="buttons" aria-expanded="false" aria-controls="header__menu-container" data-menu-button>
-                <svg class="" width="40" height="40" aria-label="swich mobile menu">
-                    <use class="icon__menu-mobile" href=".//images/symbol-defs.svg#menu_mobile"></use>
-                    <use class="icon__mobile-close" href=".//images/symbol-defs.svg#mobile-close"></use>
-            
-                </svg>
-            </button>
-            <div class="header__menu-container" id="header__menu-container" data-menu>
-                <ul class="header-menu__nav list">
-                    <li class="header-menu-nav__item link">
-                        <a href="./index.html" class="saite-nav link link-current ">Студия</a>
-                    </li>
-                    <li class="header-menu-nav__item link">
-                        <a href="./portfolio.html" class="saite-nav link ">Портфолио</a>
-                    </li>
-                    <li class="header-menu-nav__item link">
-                        <a href="" class="saite-nav link">Контакты</a>
-                    </li>
-                </ul>
-            </div>
+    
+         <button class="mobile-menu-btn" data-menu-button>
+        <svg class="mobile-menu-icon" width="40" height="40" aria-label="swich mobile menu">
+            <use class="icon__menu-mobile" href=".//images/symbol-defs.svg#menu_mobile"></use>
+            <use class="icon__mobile-close" href=".//images/symbol-defs.svg#mobile-close"></use>
+        
+        </svg>
+         </button>
+   
+           
     </header>
 
-    
+    <div class="mobile-menu" data-menu>
+        <ul class="list menu">
+            <li class="menu__item"><a class="link menu__link" href="./index.html">Студия</a></li>
+            <li class="menu__item"><a class="link menu__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="menu__item"><a class="link menu__link" href="#contacts">Контакты</a></li>
+        </ul>
+    </div>
     <!--Уникальный контент-->
    <main>
 
@@ -429,78 +425,6 @@
     </main>
     <!--footer-->
 
-  <!--  <footer class="footer__main ">
-
-        <div class="footer__container ">
-            <div class="footer__card ">
-                <a class="link footer__logos" href="./index.html"><span class="footer-logo__color">Web</span>Studio</a>
-                <a class="footer__address link" href="https://goo.gl/maps/kpo2gFMixc3sEq3g6" rel="noopener noreferrer nofollow"
-                    target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
-                <ul class="list">
-                    <li class="footer-address__item ">
-                        <a class="contacts-footer link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="footer-address__item">
-                        <a class="contacts-footer" href="tel:+380991111111">+38 099 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__card footer-social__networks">
-                <h2 class="footer__title">присоединяйтесь</h2>
-                <ul class="list footer-social__list">
-                    <li class="footer-networks__list ">
-                        <a class="footer-social__link link" href="https://www.instagram.com/dad_maksim/?hl=ru"
-                            aria-label="Ссылка на instagram" target="_self" rel="noreferrer noopener">
-                            <svg class="footer-social-icon__color " width="20px" height="20px">
-                                <use href=".//images/svg/sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-networks__list">
-                        <a class="footer-social__link link" href="" aria-label="Ссылка на twitter" target="_self"
-                            rel="noreferrer noopener">
-                            <svg class="footer-social-icon__color " width="20px" height="20px">
-                                <use href=".//images/svg/sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-networks__list">
-                        <a class="footer-social__link link" href="" aria-label="Ссылка на facebook" target="_self"
-                            rel="noreferrer noopener">
-                            <svg class="footer-social-icon__color" width="20px" height="20px">
-                                <use href=".//images/svg/sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-networks__list">
-                        <a class="footer-social__link link" href="" aria-label="Ссылка на linkedin" target="_self"
-                            rel="noreferrer noopener">
-                            <svg class="footer-social-icon__color" width="20px" height="20px">
-                                <use href=".//images/svg/sprite.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="footer__card footer-join__position">
-                <h4 class="footer__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
-                <form class="footer__form">
-                    <label>
-                        <input type="email" name="email" placeholder="E-mail" novalidate />
-                    </label>
-                    <button type="submit" class="footer__button">
-                        Подписаться
-                        <svg class="footer__subscribe " width="24" height="24">
-                            <use href="./images/svg/form-icon.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
-
-            </div>
-
-    </footer> 
--->
 <footer class="footer" id="footer">
     <div class="container footer-container">
         <ul class="wrap-footer">
@@ -599,7 +523,6 @@
     
     <!--modal windows-->
 
-    <!--
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
@@ -662,7 +585,6 @@
             </form>
         </div>
     </div>
--->
     <script src="./js/modal.js"></script>
     <script src="./js/header-menu.js"></script>
 
