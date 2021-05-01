@@ -133,13 +133,25 @@ header {
 
   @media screen and (min-width: 768px) {
     display: block;
+    margin-top: 21px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    margin-top: 0;
+    margin-left: 227px;
   }
 }
-
+.header-logo {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 23px;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-top: 23px;
+  }
+}
 .contacts__item:last-child {
   margin-left: 30px;
 }
@@ -255,4 +267,28 @@ header {
     padding: 0px;
     height: 80px;
   }
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.navigation-menu {
+  @media screen and (min-width: 480px) {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: auto;
+  }
+}
+.navigation {
+  display: flex;
 }
