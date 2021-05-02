@@ -1,0 +1,57 @@
+.filter-button {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include center();
+    margin-bottom: 46px;
+  }
+}
+
+.filter-button__item:not(:last-child) {
+  margin-right: 8px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.filter-button__btn-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding: 6px 22px;
+  background-color: $btn-bg-color;
+  color: $main-color;
+  border-radius: 4px;
+  border-color: transparent;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $btn-color;
+    background-color: $primary-color;
+    box-shadow: $btn-portfolio-shadow;
+  }
+}

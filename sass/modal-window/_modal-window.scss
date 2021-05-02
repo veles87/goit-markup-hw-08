@@ -1,0 +1,300 @@
+/* Modal window & animate*/
+
+.backdrop-slogan {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $back-drop-color;
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-slogan.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* animate */
+
+.backdrop-slogan.is-hidden .modal-slogan {
+  transform: translate(-50%, -50%) scale(2);
+}
+
+.modal-slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  background-color: $light;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
+}
+
+/* close icon */
+.modal-slogan__close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  border: 1px solid $back-drop-color;
+  background: none;
+  fill: $modal-color;
+}
+
+.modal-slogan__close-icon {
+  position: absolute;
+  left: 31%;
+  right: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 11px;
+  height: 11px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-slogan__close:hover &,
+  .modal-slogan__close:focus & {
+    fill: $hover-color;
+  }
+}
+
+/* close-icon end */
+
+/* modal-form */
+
+.modal-form__title {
+  @media screen and (min-width: $mobile) {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-color;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 12px;
+  }
+}
+
+.modal-form__unit {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.modal-form__unit-group {
+  position: relative;
+}
+
+.modal-form__unit-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  margin-top: 5px;
+
+  border: 1px solid $modal-color-border;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+
+  cursor: pointer;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border: 1px solid $hover-color;
+  }
+}
+
+.user-comment {
+  padding: 12px 16px;
+  resize: none;
+  margin-top: 5px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid $modal-color-border;
+  border-radius: 4px;
+  height: 120px;
+}
+
+/* ================================ */
+
+.modal-checkbox-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: $paragraph-color;
+  margin-top: 20px;
+  cursor: pointer;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.modal-checkbox {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.checkbox-icon-span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+  background-color: inherit;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.modal-checkbox:checked + .checkbox-icon-span {
+  background-image: url("../images/icon-modal-check-square.svg");
+  background-size: contain;
+  background-origin: border-box;
+
+  border: 2px solid $social-hover-color;
+  background-color: $social-hover-color;
+}
+
+/* =========================================== */
+
+.modal-link {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: $primary-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-link:hover,
+.modal-link:focus {
+  color: $hover-color;
+  text-decoration-line: underline;
+}
+
+.modal-form__btn-modal {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  padding: 10px 55px;
+
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+
+  background-color: $primary-color;
+  color: $light;
+  box-shadow: 0px 4px 4px $box-shadow;
+  border: none;
+  border-radius: 4px;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $light;
+    background-color: $hover-color;
+  }
+}
+
+.modal-form__lable {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $modal-color;
+}
+
+/* textaria mark up */
+
+.modal-aria-lable {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.user-comment {
+  outline: none;
+  border: 1px solid $modal-color;
+  transition-property: border;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid $social-hover-color;
+  }
+}
+
+.user-comment textarea::placeholder {
+  color: $text-area-color;
+}
+
+/* textaria mark up */
+
+/* icon in modal */
+.modal-form__unit-span {
+  position: relative;
+}
+
+.modal-form__unit-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  fill: $main-color;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form__unit-input:focus + & {
+    fill: $primary-color;
+  }
+}
+
+// .modal-form__unit-input:focus + .modal-form__unit-icon {
+//   fill: $primary-color;
+// }
+
+/* icon in modal end */

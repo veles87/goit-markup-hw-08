@@ -1,0 +1,116 @@
+.slogan {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: $header-background-color;
+  text-align: center;
+  background-image: linear-gradient($header-overlay, $header-overlay),
+    url(../images/workin-day.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// ==============================
+@media screen and (min-width: $mobile) {
+  .slogan {
+    background-image: linear-gradient($header-overlay, $header-overlay),
+      url("../images/img-mobile-480@1x.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .slogan {
+      background-image: linear-gradient($header-overlay, $header-overlay),
+        url("../images/img-mobile-480@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .slogan {
+    background-image: linear-gradient($header-overlay, $header-overlay),
+      url("../images/img-tablet-768@1x.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .slogan {
+      background-image: linear-gradient($header-overlay, $header-overlay),
+        url("../images/img-tablet-768@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .slogan {
+    background-image: linear-gradient($header-overlay, $header-overlay),
+      url("../images/img-desktop-1200@1x.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .slogan {
+      background-image: linear-gradient($header-overlay, $header-overlay),
+        url("../images/img-desktop-1200@2x.jpg");
+    }
+  }
+}
+
+// ======================================
+
+.main-title {
+  font-weight: 900;
+
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $light;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    max-width: 420px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    max-width: 696px;
+  }
+}
+
+.slogan-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px $box-shadow;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $btn-color;
+    background-color: $hover-color;
+  }
+  &:active {
+    background-color: $color-active;
+    color: $btn-color;
+  }
+}

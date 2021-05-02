@@ -1,0 +1,86 @@
+//retical common functions
+
+.business-direction,
+.team-list,
+.clients-list {
+  @extend %reticle;
+}
+
+.merits-list > .merits-list__item,
+.business-direction > .business-direction__item,
+.team-list > .team-list__member,
+.clients-list > .clients-list__item,
+.portfolio-list > .portfolio-list__point {
+  @extend %reticle-mar-t-l;
+}
+//retical common functions end
+
+//reticle merits
+
+.merits-list > .merits-list__item {
+  @media screen and (min-width: 768px) {
+    @include count(2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include count(4);
+  }
+}
+
+//reticle business
+
+.business-direction > .business-direction__item {
+  @include count(3);
+}
+
+//reticle team
+
+.team-list > .team-list__member {
+  @media screen and (min-width: 768px) {
+    @include count(2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include count(4);
+  }
+}
+
+//clients retical
+
+.clients-list > .clients-list__item {
+  @media screen and (min-width: 480px) {
+    @include count(2);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include count(3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include count(6);
+  }
+}
+
+//reticle portfolio
+
+.portfolio-list > .portfolio-list__point {
+  @media screen and (min-width: 480px) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,185 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: $main-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  color: $main-color;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.typical-link {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  padding: 10px;
+
+  position: relative;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: $paragraph-color;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+.btn {
+  background-color: $primary-color;
+  color: $btn-color;
+  font-family: Roboto;
+  font-style: normal;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $btn-color;
+    color: var(--primary-color);
+  }
+}
+
+.link {
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    background-color: $btn-color;
+  }
+}
+
+.section {
+  @media screen and (min-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+// end defaults style
+
+// mixins
+
+@mixin logo-value($color) {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $color;
+}
+
+@mixin center($d: flex, $jc: center, $ai: center) {
+  display: $d;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+// paceholders
+
+// placeholder & mixin for reticle
+
+%reticle {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: calc(-1 * #{$card-set-gap});
+  margin-top: calc(-1 * #{$card-set-gap});
+}
+
+%reticle-mar-t-l {
+  margin-left: $card-set-gap;
+  margin-top: $card-set-gap;
+}
+
+@mixin count($num) {
+  flex-basis: calc(100% / #{$num} - #{$card-set-gap});
+}
+
+// $exp: "instagram","twitter","facebook", "linkedin";
+
+// @mixin generateIcon ($iconList){
+// 	@each $iconName in iconList {
+// .icon-#{$iconName} {
+// 	src: "../images/sprite/#{$iconList}.svg"
+// }
+
+// 	}
+// }
+
+// @include generateIcon($exp)
