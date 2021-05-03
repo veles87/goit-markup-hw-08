@@ -837,9 +837,47 @@ img {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 300px) {
+  .connect__link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .connect__link {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect__link {
+    display: block;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .menu__link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .menu__link {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__link {
+    display: block;
+    width: auto;
+  }
+}
+
 .slogan {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #c4c4c4;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/workin-day.jpg);
@@ -1163,20 +1201,6 @@ img {
 .social__link:hover, .social__link:focus {
   fill: #fff;
   background-color: #2196f3;
-}
-
-.team-list__rotate-container {
-  position: relative;
-  background-color: rgba(191, 126, 33, 0.5);
-}
-
-.team-list__rotate-card {
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-}
-
-.team-list__rotate-card:hover, .team-list__rotate-card:focus {
-  transform: rotateY(180deg);
 }
 
 .team-list__rotate-card .team-list__thumb {

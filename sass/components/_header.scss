@@ -340,3 +340,30 @@
 .menu-button:focus {
   fill: $primary-color;
 }
+
+.connect__link {
+  @media screen and (min-width: 300px) {
+    display: none;
+  }
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: auto;
+  }
+}
+.menu__link {
+  @media screen and (min-width: 300px) {
+    display: none;
+  }
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: auto;
+  }
+}

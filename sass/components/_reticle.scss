@@ -1,5 +1,3 @@
-//retical common functions
-
 .business-direction,
 .team-list,
 .clients-list {
@@ -13,9 +11,6 @@
 .portfolio-list > .portfolio-list__point {
   @extend %reticle-mar-t-l;
 }
-//retical common functions end
-
-//reticle merits
 
 .merits-list > .merits-list__item {
   @media screen and (min-width: 768px) {
@@ -27,13 +22,9 @@
   }
 }
 
-//reticle business
-
 .business-direction > .business-direction__item {
   @include count(3);
 }
-
-//reticle team
 
 .team-list > .team-list__member {
   @media screen and (min-width: 768px) {
@@ -44,8 +35,6 @@
     @include count(4);
   }
 }
-
-//clients retical
 
 .clients-list > .clients-list__item {
   @media screen and (min-width: 480px) {

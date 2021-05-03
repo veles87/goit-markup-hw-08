@@ -104,20 +104,6 @@
 // team svg icon end
 
 // rotate
-.team-list__rotate-container {
-  position: relative;
-  background-color: $rotate-container-color;
-}
-
-.team-list__rotate-card {
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-
-  &:hover,
-  &:focus {
-    transform: rotateY(180deg);
-  }
-}
 
 .team-list__rotate-card .team-list__thumb {
   backface-visibility: hidden;
