@@ -1,105 +1,105 @@
 .footer {
-	height: 603px;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: $bg-footer;
-	text-align: center;
-	justify-content: center;
+  height: 603px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $bg-footer;
+  text-align: center;
+  justify-content: center;
 
-	@media screen and (min-width: 768px) {
-		height: 463px;
-	}
+  @media screen and (min-width: 768px) {
+    height: 463px;
+  }
 
-	@media screen and (min-width: 1200px) {
-		height: 252px;
-	}
+  @media screen and (min-width: 1200px) {
+    height: 252px;
+  }
 }
 
 .adapt-tabl {
-	@media screen and (min-width: 768px) {
-		display: flex;
-	}
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .bottom-line {
-	// display: flex;
-	// align-items: center;
-	// justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
-	@media screen and (min-width: 1200px) {
-		display: flex;
-		// justify-content: start;
-		align-items: baseline;
-	}
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    // justify-content: start;
+    align-items: baseline;
+  }
 }
 
 .address-style {
-	// align-items: center;
-	justify-content: center;
-	margin-bottom: 50px;
+  // align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 
-	@media screen and (min-width: 768px) {
-		margin-left: 60px;
-		margin-right: 165px;
-	}
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+    margin-right: 165px;
+  }
 
-	@media screen and (min-width: 1200px) {
-		margin-left: 0px;
-		margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+    margin-right: 70px;
 
-		text-align: left;
-	}
+    text-align: left;
+  }
 }
 
 .logo-f {
-	display: block;
+  display: block;
 
-	color: $accent-color;
-	font-family: $secondary-font;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 1.19;
-	text-decoration: none;
+  color: $accent-color;
+  font-family: $secondary-font;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-	.logo-footer {
-		color: $primerry-bg-color;
-		text-decoration: none;
-	}
+  .logo-footer {
+    color: $primerry-bg-color;
+    text-decoration: none;
+  }
 }
 
 .footer-list {
-	// display: flexbox;
+  // display: flexbox;
 
-	list-style: none;
-	padding-left: 0px;
+  list-style: none;
+  padding-left: 0px;
 
-	.footer-title {
-		font-size: 14px;
-		line-height: 1.71;
+  .footer-title {
+    font-size: 14px;
+    line-height: 1.71;
 
-		&:not(:last-child) {
-			padding-bottom: 10px;
-		}
-	}
+    &:not(:last-child) {
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .footer-link {
-	font-family: $primerry-font;
-	font-size: 14px;
-	font-style: normal;
-	line-height: 1.71;
-	color: rgba(255, 255, 255, 0.6);
-	text-decoration: none;
+  font-family: $primerry-font;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 
-	margin-left: 0px;
+  margin-left: 0px;
 }
 
 .footer-address {
-	color: $primerry-bg-color;
-	text-decoration: none;
+  color: $primerry-bg-color;
+  text-decoration: none;
 }
