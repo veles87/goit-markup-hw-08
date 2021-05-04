@@ -742,15 +742,14 @@ footer {
 }
 
 .contacts-link {
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.167;
-  letter-spacing: 0.02em;
+  line-height: 28px;
   color: #757575;
   fill: #757575;
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -792,6 +791,60 @@ footer {
   fill: #2196f3;
 }
 
+.contacts-links {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #757575;
+  fill: #757575;
+  text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-links {
+    font-size: 12px;
+    line-height: 1.172;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-links {
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-block;
+    justify-content: baseline;
+  }
+}
+
+.contacts-links:hover, .contacts-links:focus {
+  color: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .contacts-links:hover, .contacts-links:focus {
+    font-size: 29px;
+    line-height: 1.176;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .contacts-links:hover, .contacts-links:focus {
+    font-size: 34px;
+    line-height: 1.176;
+  }
+}
+
+.contacts-links:hover svg,
+.contacts-links:focus svg {
+  fill: #2196f3;
+}
+
 .mobile-soclink {
   display: flex;
   flex-wrap: wrap;
@@ -818,9 +871,12 @@ footer {
 }
 
 .mobile-soclink .soclink {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.222;
+  line-height: 22px;
+  /* identical to box height, or 122% */
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -882,6 +938,7 @@ footer {
   font-size: 16px;
   line-height: 1.62;
   text-decoration: none;
+  margin-bottom: 0;
   padding: 6px 22px;
   border-radius: 4px;
   min-width: 78px;
@@ -902,13 +959,31 @@ footer {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-btn:nth-child(-n + 2) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .portfolio-btn {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-btn {
+    margin-bottom: 0;
+  }
+}
+
 .portfolio-btn:hover, .portfolio-btn:focus {
   background: #2196f3;
   color: #ffffff;
 }
 
 .list-title-filters {
-  margin-top: 40px;
+  margin-top: 19px;
 }
 
 @media screen and (min-width: 768px) {
@@ -998,10 +1073,6 @@ footer {
 
 .card-projects {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-title-projects:hover .card-projects {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-description {
