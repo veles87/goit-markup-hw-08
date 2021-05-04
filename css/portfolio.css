@@ -686,7 +686,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .contacts-container {
     display: flex;
-    margin-left: 300px;
+    margin-left: 280px;
     margin-bottom: 0px;
   }
   .contacts-container .item:not(:last-child) {
@@ -795,7 +795,7 @@ footer {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 33px;
   line-height: 40px;
   /* identical to box height */
   letter-spacing: 0.02em;
