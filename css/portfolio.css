@@ -513,6 +513,10 @@ footer {
   color: #212121;
 }
 
+.logo-part-two:hover, .logo-part-two:focus {
+  color: #188ce8;
+}
+
 .nav-container {
   align-items: center;
   height: 60px;
@@ -1099,6 +1103,10 @@ footer {
   text-decoration: none;
 }
 
+.logo-f .logo-footer:hover, .logo-f .logo-footer:focus {
+  color: #188ce8;
+}
+
 .footer-list {
   list-style: none;
   padding-left: 0px;
@@ -1281,6 +1289,10 @@ footer {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+.btn-submit:hover, .btn-submit:focus {
+  background-color: #188ce8;
 }
 
 .icon-subcribe {

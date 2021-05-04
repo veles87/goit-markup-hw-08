@@ -69,6 +69,10 @@
   .logo-footer {
     color: $primerry-bg-color;
     text-decoration: none;
+    &:hover,
+    &:focus {
+      color: #188ce8;
+    }
   }
 }
 
