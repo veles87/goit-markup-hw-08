@@ -35,13 +35,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    &:nth-child(-n + 2) {
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
-
     /*  Задаём ширину элементов  */
     flex-basis: calc(100% / 3 - 30px);
+    margin-bottom: 30px;
   }
 
   &:hover,
